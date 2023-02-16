@@ -1,4 +1,4 @@
-int main(void)
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,6 +7,9 @@ int main(void)
  *
  * Return: Always 0 (Succesful)
 */
+
+
+int main(void)
 
 {
 	int a;
