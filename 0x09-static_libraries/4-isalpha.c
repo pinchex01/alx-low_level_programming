@@ -1,24 +1,19 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
- * _isalpha - Entry point
- * @c: the integer value it receives
- * Description: checks if alphabet
- * Return: 1 if true. 0 if false
+ * _isalpha - return 1 or 0 depending on the output
+ * @c: the main parameter
+ *
+ * Description: checking for lower or uppercase alphabets
+ * Return: Always 0 (success)
  */
 
 int _isalpha(int c)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-	return (1);
-	}
-	else if (c >= 'A' && c <= 'Z')
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 	{
 		return (1);
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
